@@ -108,7 +108,7 @@ $user = User::find($id);
 $user->attachRole($adminRole); // you can pass whole object, or just an id
 $user->detachRole($adminRole); // in case you want to detach role
 $user->detachAllRoles(); // in case you want to detach all roles
-$user->syncRoles($roles); // you can pass Eloquent collection, or just an array of ids
+$user->syncRoles($roles); // you can pass Eloquent collection, or just an array of ids.
 ```
 
 ### Checking For Roles
