@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use InvalidArgumentException;
 use mobacode\Roles\Models\Permission;
 use mobacode\Roles\Models\Role;
+use mobacode\Roles\Traits\SupportLaravel6;
 
 trait HasRoleAndPermission
 {
@@ -415,11 +416,11 @@ trait HasRoleAndPermission
 
     public function callMagic($method, $parameters)
     {
-        if (starts_with($method, 'is')) {
+        if (SupportLaravel6::starts_with($method, 'is')) {
             return $this->hasRole(snake_case(substr($method, 2), config('roles.separator')));
-        } elseif (starts_with($method, 'can')) {
+        } elseif (SupportLaravel6::starts_with($method, 'can')) {
             return $this->hasPermission(snake_case(substr($method, 3), config('roles.separator')));
-        } elseif (starts_with($method, 'allowed')) {
+        } elseif (SupportLaravel6::starts_with($method, 'allowed')) {
             return $this->allowed(snake_case(substr($method, 7), config('roles.separator')), $parameters[0], (isset($parameters[1])) ? $parameters[1] : true, (isset($parameters[2])) ? $parameters[2] : 'user_id');
         }
 
