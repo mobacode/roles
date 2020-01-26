@@ -18,6 +18,13 @@ class CreatePermissionsTable extends Migration
             $table->string('slug')->unique();
             $table->string('description')->nullable();
             $table->string('model')->nullable();
+            $table->enum('sidebar', ['yes', 'no'])->default('user');
+            $table->string('icon')->nullable();
+            $table->string('title')->nullable();
+            $table->integer('group_id')->nullable();
+            $table->string('group_name')->nullable();
+            $table->string('group_icon')->nullable();
+            $table->integer('order_items')->nullable();
             $table->timestamps();
         });
     }
