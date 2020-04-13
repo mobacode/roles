@@ -1,7 +1,7 @@
 {
     "name": "mobacode/roles",
     "description": "Powerful package for handling roles and permissions in Laravel 7",
-    "version": "1.0.3",
+    "version": "1.2.0",
     "keywords": [
         "roles",
         "permissions",
@@ -45,8 +45,7 @@
                 "mobacode\\Roles\\RolesServiceProvider"
             ]
         }
-    },
-    
+    }, 
     "require": {
         "php": "^7.2",
         "illuminate/support": "^6.0|^7.0",
