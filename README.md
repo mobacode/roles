@@ -1,6 +1,6 @@
-# Roles And Permissions For Laravel 6
+# Roles And Permissions For Laravel 7
 
-Powerful package for handling roles and permissions in Laravel 6.
+Powerful package for handling roles and permissions in Laravel 7.
 
 - [Installation](#installation)
     - [Composer](#composer)
