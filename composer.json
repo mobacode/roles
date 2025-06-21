@@ -1,7 +1,7 @@
 {
     "name": "mobacode/roles",
     "description": "Powerful package for handling roles and permissions in Laravel 7 | 8 | 9",
-    "version": "3.0.0",
+    "version": "1.7.0",
     "keywords": [
         "roles",
         "permissions",
